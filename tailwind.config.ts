@@ -8,11 +8,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        Montserrat:["Montserrat"]
+      },
+       
       colors: {
+      'custom-blue': ['rgba(35, 166, 240, 1)'],
+      'custom-green':[ 'rgba(45, 192, 113, 1)'],
+      },
+      
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
-  },
-  plugins: [],
-} satisfies Config;
+  };
+  plugins: [];
+
