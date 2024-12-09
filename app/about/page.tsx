@@ -32,7 +32,7 @@ export default function About(){
       <h5 className="font-Montserrat font-bold text-base text-gray-700 mb-5">ABOUT COMPANY</h5>
       <h1 className="font-Montserrat font-bold text-2xl md:text-[58px] mt-7">ABOUT US</h1>
       <p className="font-Montserrat font-normal text-[16px] md:text-[20px] text-gray-600 mt-8">
-        We know how large objects will act,
+        We know how large objects will act
         <br />
         <span className="font-Montserrat font-normal text-[16px] md:text-[20px] text-gray-600 mt-8">but think on a small scale</span>
       </p>
@@ -188,7 +188,7 @@ export default function About(){
       <div className="text-center md:text-left ">
         <h5 className="font-Montserrat font-bold text-base text-white">WORK WITH US</h5>
         <h2 className="font-Montserrat font-bold text-[40px] text-white">
-          Now Let's grow Yours 
+          Now Let&apos;s grow Yours 
         </h2>
         <p className="text-white ">
           The gradual information about atomic and <br />
