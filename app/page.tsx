@@ -49,15 +49,16 @@ export default function Home() {
         <div className="flex items-center space-x-6">
           <Link href="#" className="text-black text-sm font-Montserrat">Home</Link>
           <div className="flex items-center">
-            <Link href="#" className="text-black  text-sm font-Montserrat flex items-center">
+            <Link href="/shop" className="text-black  text-sm font-Montserrat flex items-center">
               Shop
               <Image src="/arrow.png" alt="arrow" width={5.71} height={28} priority />
+              
             </Link>
           </div>
           <Link href={"/about"} className="text-black text-sm font-Montserrat">About</Link>
-          <Link href="#" className="text-black text-sm font-Montserrat">Blog</Link>
-          <Link href="#" className="text-black text-sm font-Montserrat">Contact</Link>
-          <Link href="#" className="text-black text-sm font-Montserrat">Pages</Link>
+          <Link href={"/blog"} className="text-black text-sm font-Montserrat">Blog</Link>
+          <Link href={"/contact"} className="text-black text-sm font-Montserrat">Contact</Link>
+          <Link href={"/team"}className="text-black text-sm font-Montserrat">Pages</Link>
         </div>
   
         {/* Right Section */}

@@ -11,10 +11,10 @@ export default function About(){
   <div className="flex justify-around p-9 w-full h-[91px]">
     <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
     <nav className="font-Montserrat text-sm font-bold text-gray-600 mb-3">
-      <Link href="#" className="mr-4">Home</Link>
-      <Link href="#" className="mr-4">Product</Link>
+      <Link href="/" className="mr-4">Home</Link>
+      <Link href="/blog" className="mr-4">Product</Link>
       <Link href="#" className="mr-4">Pricing</Link>
-      <Link href="#" className="mr-4">Contact</Link>
+      <Link href="/contact" className="mr-4">Contact</Link>
     </nav>
     <div className="font-Montserrat font-bold text-sm text-sky-500">
       <Link href="#">Login</Link>
