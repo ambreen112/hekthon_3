@@ -8,18 +8,18 @@ export default function About(){
     
         <>
   {/* Navigation Section */}
-  <div className="flex justify-around p-9 w-full h-[91px]">
-    <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
-    <nav className="font-Montserrat text-sm font-bold text-gray-600 mb-3">
-      <Link href="/" className="mr-4">Home</Link>
-      <Link href="/blog" className="mr-4">Product</Link>
-      <Link href="#" className="mr-4">Pricing</Link>
-      <Link href="/contact" className="mr-4">Contact</Link>
+  <div className="flex justify-around p-9 w-full h-[91px] flex-wrap md:flex-nowrap">
+    <p className="font-Montserrat font-bold text-[24px] w-full md:w-auto text-center md:text-left">Bandage</p>
+    <nav className="font-Montserrat text-sm font-bold text-gray-600 mb-3 ">
+      <Link href="/" className="mr-4 mb-2 md:mb-0 ">Home</Link>
+      <Link href="/blog" className="mr-4 mb-2 md:mb-0">Product</Link>
+      <Link href="#" className="mr-4 mb-2 md:mb-0">Pricing</Link>
+      <Link href="/contact" className="mr-4 mb-2 md:mb-0">Contact</Link>
     </nav>
-    <div className="font-Montserrat font-bold text-sm text-sky-500">
+    <div className="font-Montserrat font-bold text-sm text-sky-500 w-full md:w-auto text-center md:text-lef">
       <Link href="#">Login</Link>
     </div>
-    <div className="bg-sky-500 px-6 py-6 flex rounded-md font-Montserrat font-bold text-white mb-4 items-center justify-center">
+    <div className="bg-sky-500 px-6 py-6 flex rounded-md font-Montserrat font-bold text-white mb-4 items-center justify-center w-full md:w-auto">
       <button>Become a member</button>
       <Image className="font-bold ml-5" src="/vector11.png" alt="arrow" width={12} height={12} />
     </div>
@@ -50,9 +50,9 @@ export default function About(){
 
 
   {/* Call to Action Section */}
-  <div className="w-full h-[236px] flex items-center justify-center gap-32">
-    <div className="mb-5">
-      <p className="font-Montserrat text-sm font-normal text-red-600 mb-4">Problem trying</p>
+  <div className="w-full h-[236px] flex items-center justify-center gap-32 flex-col md:flex-row">
+    <div className="mb-5 text-center md:text-left">
+      <p className="font-Montserrat text-sm font-normal text-red-600 mb-4 ">Problem trying</p>
       <h2 className="font-Montserrat font-bold text-[24px] text-gray-800">
         Met minim Mollie non desert<br />Alamo est sit cliquy dolor do<br />met sent
       </h2>
@@ -66,20 +66,20 @@ export default function About(){
   </div>
 
   {/* Statistics Section */}
-  <div className="w-full h-[264px] flex justify-center gap-16 mt-9">
-    <div>
+  <div className="w-full h-[264px] flex justify-center gap-16 mt-9 flex-col md:flex-row">
+    <div className="text-center">
       <p className="font-Montserrat font-bold text-[58px]">15K</p>
       <p className="font-Montserrat font-bold text-base text-gray-600">Happy Customers</p>
     </div>
-    <div>
+    <div className="text-center">
       <p className="font-Montserrat font-bold text-[58px]">150K</p>
       <p className="font-Montserrat font-bold text-base text-gray-600">Monthly Visitors</p>
     </div>
-    <div>
+    <div className="text-center">
       <p className="font-Montserrat font-bold text-[58px]">15K</p>
       <p className="font-Montserrat font-bold text-base text-gray-600">Countries Worldwide</p>
     </div>
-    <div>
+    <div className="text-center">
       <p className="font-Montserrat font-bold text-[58px]">100+</p>
       <p className="font-Montserrat font-bold text-base text-gray-600">Top Partners</p>
     </div>
@@ -95,7 +95,7 @@ export default function About(){
         <Image src="/button.png" alt="button" width={92} height={92} />
       </div>
     </div>
-    </div>
+   </div> 
 
   {/* Meet Our Team Section */}
   <div className="w-full h-[826px]">
@@ -110,7 +110,7 @@ export default function About(){
       </div>
 
       {/* Team Members */}
-      <div className="w-full flex justify-center gap-5 mt-8 items-center">
+      <div className="w-full flex justify-center gap-5 mt-8 items-center flex-wrap md:flex-nowrap">
         <div className="flex flex-col items-center">
           <Image src="/girl1.png" alt="girl" width={316} height={231} />
           <h5 className="font-Montserrat font-bold text-base mt-4">Username</h5>
@@ -152,7 +152,7 @@ export default function About(){
     <div className="w-full h-full flex flex-col justify-center items-center ">
       {/* Heading Section */}
       <div className="text-center mb-8">
-        <h2 className="font-Montserrat font-bold text-[40px]">Big Companies Are Here</h2>
+        <h2 className="font-Montserrat font-bold text-[40px]  sm:text-[40px] ">Big Companies Are Here</h2>
         <p className="text-gray-600 font-Montserrat font-normal text-sm">
           Problem trying to resolve the conflict between the two major realms of<br />
           classical physics. Newton Mechanics
@@ -160,7 +160,7 @@ export default function About(){
       </div>
 
       {/* Companies Logos */}
-      <div className="flex justify-center gap-20 items-center">
+      <div className="flex justify-center gap-20 items-center   flex-wrap md:flex-nowrap">
         <div>
           <Image src="/fa1.png" alt="fa" width={76} height={72} />
         </div>
@@ -202,6 +202,79 @@ export default function About(){
   </div>
   </div>
   </div>
+
+  <div className="flex items-center justify-around bg-slate-100 px-6 py-4">
+  <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
+  <div className="flex items-center space-x-4">
+    <Image src={"/facebook.png"} alt="Facebook" width={26} height={26} />
+    <Image src={"/instagram.png"} alt="Instagram" width={26} height={26} />
+    <Image src={"/twitter.png"} alt="Twitter" width={26} height={26} />
+  </div>
+</div>
+        
+        <footer className=" text-black py-6">
+    <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat  text-base">Company Info</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Legal</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Features</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Unlimited Support</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Resources</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">iOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Get In Touch</h2>
+                
+                <div className="mb-4">
+          <div className="flex items-center ">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-auto border border-gray-300 p-2 rounded"
+            />
+            <button className="bg-blue-400 py-2 px-1 rounded hover:bg-blue-100">
+              Subscribe
+            </button>
+          </div>
+          <p className="text-sm mt-2 font-Montserrat font-normal text-[12px]">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div className="text-center mt-6 font-Montserrat font-bold text-sm text-gray-600">
+            <p>Made With Love By Finland | All Rights Reserved</p>
+        </div>
+    
+</footer>
   
 </>
 

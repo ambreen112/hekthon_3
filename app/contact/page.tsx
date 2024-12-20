@@ -43,21 +43,8 @@ export default function Contact(){
       </div>
       <div className="flex mt-7 gap-9">
         <Image src={"/p1.png"} alt="twitter" width={30} height={24.38}/>
-        <div className="relative inline-block">
-  <Image 
-    className="absolute inset-0 " 
-    src="/p2f.png" 
-    alt="frame" 
-    width={30} 
-    height={30} 
-  />
-  <Image 
-    className="absolute inset-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 " 
-    src="/p2.png" 
-    alt="facebook" 
-    width={13.23} 
-    height={25.47} 
-  />
+        <div className="">
+ <Image src={"/facebook0.png"} alt="facebook" width={30} height={30}/>
 </div>
         <Image src={"/p3.png"} alt="twitter" width={29.98} height={29.98}/>
         <Image src={"/p4.png"} alt="twitter" width={29.98} height={29.98}/>
@@ -161,7 +148,80 @@ export default function Contact(){
   </button>
 </div>
 
-  
+
+
+  <div className="flex items-center justify-around bg-slate-100 px-6 py-4">
+  <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
+  <div className="flex items-center space-x-4">
+    <Image src={"/facebook.png"} alt="Facebook" width={26} height={26} />
+    <Image src={"/instagram.png"} alt="Instagram" width={26} height={26} />
+    <Image src={"/twitter.png"} alt="Twitter" width={26} height={26} />
+  </div>
+</div>
+        
+        <footer className=" text-black py-6">
+    <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat  text-base">Company Info</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Legal</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Features</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Unlimited Support</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Resources</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">iOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Get In Touch</h2>
+                
+                <div className="mb-4">
+          <div className="flex items-center ">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-auto border border-gray-300 p-2 rounded"
+            />
+            <button className="bg-blue-400 py-2 px-1 rounded hover:bg-blue-100">
+              Subscribe
+            </button>
+          </div>
+          <p className="text-sm mt-2 font-Montserrat font-normal text-[12px]">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div className="text-center mt-6 font-Montserrat font-bold text-sm text-gray-600">
+            <p>Made With Love By Finland | All Rights Reserved</p>
+        </div>
+    
+</footer> 
   </>
 )
 }

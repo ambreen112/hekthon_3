@@ -1,88 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navigation from "./components/navbar";
 
 
 
 export default function Home() {
   return (
+    <>
     <header className="w-full h-auto">
-    <nav className="bg-black w-full h-[46px] flex justify-between items-center">
-      {/* Left Navigation */}
-      <div className="flex items-center justify-between">
-        <div className="ml-7">
-          <button className="flex items-center w-[145px] h-[44px] text-white text-sm font-bold font-Montserrat">
-            <Image className="align-middle" src="/Vector (6).png" alt="phone" width={16} height={16} />
-            (225)555-0118
-          </button>
-        </div>
-        <div className="mr-9">
-          <button className="flex items-center w-[260px] h-[44px] text-white text-sm font-bold ml-8 font-Montserrat">
-            <Image className="text-white" src="/Vector (7).png" alt="email" width={16} height={12} />
-            michelle.rivera@example.com
-          </button>
-        </div>
-      </div>
-  
-      {/* Center Text */}
-      <div className="w-full h-24 text-white text-sm font-bold flex justify-center">
-        <p className="flex p-9 font-Montserrat">Follow Us and get a chance to win 80% off</p>
-      </div>
-  
-      {/* Follow Us Section */}
-      <div className="w-full h-24 text-white inline-flex items-center justify-center">
-        <h6 className="font-Montserrat font-bold text-sm p-3">Follow Us :</h6>
-        <div className="inline-flex w-auto h-26 mb-1 items-center space-x-3">
-          <Image src="/a.png" alt="a" width={26} height={26} />
-          <Image src="/b.png" alt="b" width={26} height={26} />
-          <Image src="/c.png" alt="c" width={26} height={26} />
-          <Image src="/bird.png" alt="bird" width={26} height={26} />
-        </div>
-      </div>
-    </nav>
-  
-    {/* Main Navigation */}
-    <div className="w-full h-[58px] flex items-center bg-white">
-      <p className="font-Montserrat font-bold text-2xl text-black ml-8">Bandage</p>
-  
-      <nav className="flex items-center justify-between w-full ml-8">
-        {/* Left Navigation */}
-        <div className="flex items-center space-x-6">
-          <Link href="#" className="text-black text-sm font-Montserrat">Home</Link>
-          <div className="flex items-center">
-            <Link href="/shop" className="text-black  text-sm font-Montserrat flex items-center">
-              Shop
-              <Image src="/arrow.png" alt="arrow" width={5.71} height={28} priority />
-              
-            </Link>
-          </div>
-          <Link href={"/about"} className="text-black text-sm font-Montserrat">About</Link>
-          <Link href={"/blog"} className="text-black text-sm font-Montserrat">Blog</Link>
-          <Link href={"/contact"} className="text-black text-sm font-Montserrat">Contact</Link>
-          <Link href={"/team"}className="text-black text-sm font-Montserrat">Pages</Link>
-        </div>
-  
-        {/* Right Section */}
-        <div className="flex items-center space-x-8">
-          <nav className="flex items-center">
-            <a href="#" className="flex items-center text-white">
-              <Image src="/but.png" alt="button" width={12} height={12} />
-              <p className="text-custom-blue-0 font-bold text-sm font-Montserrat ml-2">Login/Register</p>
-            </a>
-          </nav>
-  
-          {/* Icons */}
-          <div className="flex items-center space-x-4">
-            <Image src="/li-1.png" alt="lens" width={46} height={46} />
-            <Image src="/li-2.png" alt="lens" width={46} height={46} />
-            <Image src="/li-3.png" alt="lens" width={46} height={46} />
-          </div>
-        </div>
-      </nav>
-    </div>
-  
+  <Navigation/>
   
       <div className="w-full relative">
-  <Image src={"/shop-1.jpg"} alt="hero" layout="responsive" width={1440} height={716} />
+  <Image  src={"/shop-1.jpg"} alt="hero" layout="responsive" width={1440} height={716} />
   <div className="absolute inset-0 flex flex-col justify-center items-start px-4 ml-28">
     <h5 className="font-Montserrat font-bold text-base text-white mb-2">
       SUMMER 2020
@@ -273,7 +202,7 @@ export default function Home() {
 </div>
 </div>
 
-<div className="w-full relative bg-emerald-700 flex items-center mt-4">
+<div className="w-full relative bg-custom-dark-green-0 flex items-center mt-4">
   {/* Content on the left */}
   <div className="flex flex-col justify-center items-start px-4 ml-28">
     <h5 className="font-Montserrat font-normal text-[20px] text-white mb-2">
@@ -288,10 +217,10 @@ export default function Home() {
     <div className="w-[221px] h-[62px] flex items-center justify-center">
       <div className="flex gap-3">
         <div>
-          <p className="text-white font-Montserrat font-bold text-[24px]">$16.48</p>
+          <p className="text-white font-Montserrat font-bold text-[24px] mt-2">$16.48</p>
         </div>
-        <div className="ml-5 px-4 py-2 bg-custom-green-0 rounded-lg items-center text-white font-Montserrat font-normal text-sm">
-          <button className="text-white">Add To Cart</button>
+        <div className="ml-5  bg-custom-green-0 rounded-sm mt-2 w-[184px] h-[52px]  text-white font-Montserrat font-bold text-sm">
+          <button className="text-white ml-12 mt-3 ">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -453,5 +382,78 @@ export default function Home() {
 </div>
 </div>
 </header>
+ <div className="flex items-center justify-around bg-slate-100 px-6 py-4">
+ <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
+ <div className="flex items-center space-x-4">
+   <Image src={"/facebook.png"} alt="Facebook" width={26} height={26} />
+   <Image src={"/instagram.png"} alt="Instagram" width={26} height={26} />
+   <Image src={"/twitter.png"} alt="Twitter" width={26} height={26} />
+ </div>
+</div>
+       
+       <footer className=" text-black py-6">
+   <div className="container mx-auto px-4">
+       <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+           <div className="col-span-1">
+               <h2 className=" font-bold mb-4 font-Montserrat  text-base">Company Info</h2>
+               <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Carrier</a></li>
+                   <li><a href="#">We are hiring</a></li>
+                   <li><a href="#">Blog</a></li>
+               </ul>
+           </div>
+           <div className="col-span-1">
+               <h2 className=" font-bold mb-4 font-Montserrat text-base">Legal</h2>
+               <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Carrier</a></li>
+                   <li><a href="#">We are hiring</a></li>
+                   <li><a href="#">Blog</a></li>
+               </ul>
+           </div>
+           <div className="col-span-1">
+               <h2 className=" font-bold mb-4 font-Montserrat text-base">Features</h2>
+               <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                   <li><a href="#">Business Marketing</a></li>
+                   <li><a href="#">User Analytic</a></li>
+                   <li><a href="#">Live Chat</a></li>
+                   <li><a href="#">Unlimited Support</a></li>
+               </ul>
+           </div>
+           <div className="col-span-1">
+               <h2 className="font-Montserrat text-base font-bold mb-4">Resources</h2>
+               <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                   <li><a href="#">iOS & Android</a></li>
+                   <li><a href="#">Watch a Demo</a></li>
+                   <li><a href="#">Customers</a></li>
+                   <li><a href="#">API</a></li>
+               </ul>
+           </div>
+           <div className="col-span-1">
+               <h2 className="font-Montserrat text-base font-bold mb-4">Get In Touch</h2>
+               
+               <div className="mb-4">
+         <div className="flex items-center ">
+           <input
+             type="email"
+             placeholder="Your Email"
+             className="w-auto border border-gray-300 p-2 rounded"
+           />
+           <button className="bg-blue-400 py-2 px-1 rounded hover:bg-blue-100">
+             Subscribe
+           </button>
+         </div>
+         <p className="text-sm mt-2 font-Montserrat font-normal text-[12px]">Lorem ipsum dolor sit amet.</p>
+       </div>
+     </div>
+   </div>
+       </div>
+       <div className="text-center mt-6 font-Montserrat font-bold text-sm text-gray-600">
+           <p>Made With Love By Finland | All Rights Reserved</p>
+       </div>
+   
+</footer>
+</>
 )
 }

@@ -48,7 +48,7 @@ export default function Shop(){
       <nav className="flex items-center justify-between w-full ml-8">
         {/* Left Navigation */}
         <div className="flex items-center space-x-6">
-          <Link href="#" className="text-black text-sm font-Montserrat">Home</Link>
+          <Link href="/" className="text-black text-sm font-Montserrat">Home</Link>
           <div className="flex items-center">
             <Link href="#" className="text-black  text-sm font-Montserrat flex items-center">
               Shop
@@ -188,6 +188,329 @@ export default function Shop(){
           <Image src="/fa6.png" alt="fa" width={76} height={72} />
         </div>
       </div>
+      <div className="flex items-center justify-around bg-slate-100 px-6 py-4">
+  <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
+  <div className="flex items-center space-x-4">
+    <Image src={"/facebook.png"} alt="Facebook" width={26} height={26} />
+    <Image src={"/instagram.png"} alt="Instagram" width={26} height={26} />
+    <Image src={"/twitter.png"} alt="Twitter" width={26} height={26} />
+  </div>
+</div>
+        
+        <footer className=" text-black py-6">
+    <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat  text-base">Company Info</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Legal</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">We are hiring</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className=" font-bold mb-4 font-Montserrat text-base">Features</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Unlimited Support</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Resources</h2>
+                <ul className="font-Montserrat font-bold text-sm text-gray-600">
+                    <li><a href="#">iOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div className="col-span-1">
+                <h2 className="font-Montserrat text-base font-bold mb-4">Get In Touch</h2>
+                
+                <div className="mb-4">
+          <div className="flex items-center ">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-auto border border-gray-300 p-2 rounded"
+            />
+            <button className="bg-blue-400 py-2 px-1 rounded hover:bg-blue-100">
+              Subscribe
+            </button>
+          </div>
+          <p className="text-sm mt-2 font-Montserrat font-normal text-[12px]">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div className="text-center mt-6 font-Montserrat font-bold text-sm text-gray-600">
+            <p>Made With Love By Finland | All Rights Reserved</p>
+        </div>
+    
+</footer>
+
+<div className="w-full h-[74px] mt-6 bg-custom-light-gray" >
+  <div className="w-[1050px] h-[74px] flex justify-center">
+    <div className="w-[600px] h-[74px]">
+      <p className="font-Montserrat font-bold text-sm text-gray-600 mt-6">Made With Love By Finland All Right Reserved</p>
+
+    </div>
+
+  </div>
+</div>
+
+<div className="w-full h-[1778px] mt-10 ">
+   <div className="w-[239] h-[615]  flex justify-center gap-9 ">
+  
+  <div  className="flex flex-col justify-center " >
+              <Image src={"/boy1.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+              </div>
+
+              <div  className="flex flex-col justify-center " >
+              <Image src={"/boy2.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+
+</div>
+<div  className="flex flex-col justify-center " >
+              <Image src={"/boy3.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+
+          <div  className="flex flex-col justify-center " >
+              <Image src={"/boy4.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+      </div>
+
+
+
+
+       <div className="w-[239] h-[615]  flex justify-center gap-9  mt-14">
+  
+  <div  className="flex flex-col justify-center " >
+              <Image src={"/boy5.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+              </div>
+
+              <div  className="flex flex-col justify-center " >
+              <Image src={"/boy6.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+
+</div>
+<div  className="flex flex-col justify-center " >
+              <Image src={"/boy7.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+
+          <div  className="flex flex-col justify-center " >
+              <Image src={"/boy8.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+      </div>   
+
+
+
+        <div className="w-[239] h-[615]  flex justify-center gap-9  mt-14">
+  
+  <div  className="flex flex-col justify-center " >
+              <Image src={"/boy9.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+              </div>
+
+              <div  className="flex flex-col justify-center " >
+              <Image src={"/boy10.png"} alt="style" width={239} height={300}/>
+            
+           
+              <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+              <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+              <div className="w-[108] h-[34] flex mt-4">
+                <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+                <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+  </div>
+              
+              
+        <div>
+                <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+              </div>
+
+</div>
+<div  className="flex flex-col justify-center " >
+              <Image src={"/boy11.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+
+          <div  className="flex flex-col justify-center " >
+              <Image src={"/boy12.png"} alt="style" width={239} height={300}/>
+            
+           
+            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
+            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
+            <div className="w-[108] h-[34] flex mt-4">
+              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
+              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
+</div>
+            
+            
+      <div>
+              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
+            
+          </div>
+          </div>
+      </div>    
+
+
+
+ 
+<div className=" w-[313px] h-[74px]  flex justify-center items-center  mt-10 ">
+  <ul className="font-Montserrat text-sm font-bold text-custom-gray flex justify-center   ml-[1150px]   ">
+    <li className="  bg-white border border-gray-300 rounded-1-md hover:bg-gray-50 px-2 py-4"> First</li>
+    <li className="text-custom-light-blue-1-0  bg-white border border-gray-300 rounded-sm-md hover:bg-gray-50 px-2 py-4">1</li>
+  
+    <li className="bg-custom-light-blue-1-0 text-white  bg-white border border-gray-300 rounded-sm-md hover:bg-gray-50 px-2 py-4">2</li>
+    <li className=" text-custom-light-blue-1-0  bg-white border border-gray-300 rounded-sm-md hover:bg-gray-50 px-2 py-4">3</li>
+    <li className="text-custom-light-blue-1-0  bg-white border border-gray-300 rounded-1-md hover:bg-gray-50 px-2 py-4">Next</li>
+  </ul>
+
+</div>
+</div>
       
     </>
    
