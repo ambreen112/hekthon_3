@@ -1,258 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./components/navbar";
+import Hero from "./components/hero1";
+import Hero2 from "./components/hero2";
+import Hero3 from "./components/hero3";
+import Hero4 from "./components/hero4";
 
 
 
 export default function Home() {
   return (
     <>
-    <header className="w-full h-auto">
+   
   <Navigation/>
   
-      <div className="w-full relative">
-  <Image  src={"/shop-1.jpg"} alt="hero" layout="responsive" width={1440} height={716} />
-  <div className="absolute inset-0 flex flex-col justify-center items-start px-4 ml-28">
-    <h5 className="font-Montserrat font-bold text-base text-white mb-2">
+  <div className="w-full relative">
+  <Image 
+    src={"/shop-1.jpg"} 
+    alt="hero" 
+    layout="responsive" 
+    width={1440} 
+    height={716} 
+  />
+  <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-8 md:px-16 lg:px-28">
+    <h5 className="font-Montserrat font-bold text-base sm:text-lg text-white mb-2">
       SUMMER 2020
     </h5>
-    <h1 className="font-Montserrat text-[58px] font-bold text-white">
+    <h1 className="font-Montserrat text-[32px] sm:text-[48px] md:text-[58px] font-bold text-white leading-tight mb-4">
       NEW COLLECTION
     </h1>
-    <h4 className="font-Montserrat text-[20px] font-normal text-white mb-4 w-full">
-      We knew how large objects will act,<br></br> but things on a small scale.
+    <h4 className="font-Montserrat text-[14px] sm:text-[16px] md:text-[20px] font-normal text-white mb-4 w-full">
+      We knew how large objects will act,<br /> but things on a small scale.
     </h4>
-    <div className="w-[221px] h-[62px] flex items-center justify-center bg-custom-green-0">
-      <button className="px-4 py-1 bg-custom-green-0 text-white">
+    <div className="w-[180px] sm:w-[200px] md:w-[221px] h-[50px] sm:h-[56px] md:h-[62px] flex items-center justify-center bg-custom-green-0">
+      <button className="px-4 py-2 sm:px-5 sm:py-3 bg-custom-green-0 text-white text-sm sm:text-base">
         SHOP NOW
       </button>
-      </div>
+    </div>
   </div> 
 </div>
 
-<div className="w-[1440] h-auto  flex justify-center items-center ">
-  <div className="w-[1050] h-770 flex flex-col justify-center items-center p-14">
-    <h2 className="font-Montserrat font-bold text-[24] justify-center">EDITOR&apos;S PICK</h2>
-    <p className="font-Montserrat font-normal text-sm">Problems trying to resolve the conflict between </p>
 
+<Hero/>
+
+ <Hero2/>
+
+<Hero3/>
   
-  <div className="w-[1050] h-[500] flex gap-9 mt-14">
-    <div className="relative">
-      <Image src={"/filter-1.png"} alt="man"width={509} height={500}/>
-      <h2 className="absolute bottom-9 left-6  py-2 px-11 text-center font-Montserrat font-bold text-[16px] bg-white ">
-      MEN
-    </h2>
-    </div>
-    <div className="relative">
-      <Image src={"/filter-2.png"} alt="man"width={239} height={500}/>
-      <h2 className="absolute bottom-9 left-6  py-2 px-11  font-Montserrat font-bold text-[16px] bg-white">WOMEN</h2>
-    </div>
-   
-    <div className=" gap-9 flex flex-col">
-    <div className="relative">
-      <Image src={"/filter-3.png"} alt="man"width={239} height={242}/>
-      <h2 className="absolute bottom-9 left-6  py-2 px-11  font-Montserrat font-bold text-[16px] bg-white">ACCESSORIES</h2>
-    </div>
-    <div className="relative">
-      <Image src={"/filter-4.png"} alt="man"width={239} height={242}/>
-      <h2 className="absolute bottom-9 left-6  py-2 px-11  font-Montserrat font-bold text-[16px] bg-white">KIDS</h2>
-    </div>
-    </div>
-  </div>
+ <Hero4/>
 
 
-  <div className="w-[1440] h-auto mt-24">
-    <div className="w-[1124] h-[1652] flex justify-center ">
-      <div className="w-[691] h-[102]">
-        <h2 className="font-Montserrat font-normal text-[20px] items-center justify-center ml-14 text-gray-500">Featured Product</h2>
-        <h3 className="font-Montserrat font-bold text-[24px] " >BESTSELLER PRODUCT</h3>
-        <p className="font-Montserrat font-normal text-sm mr-20 text-gray-500">Problems trying to solve the conflict between</p>
-</div>
-      </div>
 
-      <div className="w-[1049] h-[615]  flex justify-center items-center    mt-10">
-        <div className="w-[239] h-[615]  flex gap-9   ">
-          <div  className="flex flex-col " >
-            <Image src={"/her1.png"} alt="style" width={239} height={427}/>
-          
-         
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-</div>
-            
-            
-      
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            </div>
-
-            <div>
-            <Image src={"/her2.png"} alt="style" width={239} height={427}/>
-          
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-</div>
-            
-            
-              <Image  className="mt-4"src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            </div>
-
-            <div>
-            <Image src={"/her3.png"} alt="style" width={239} height={427}/>
-          
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500 ">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-
-            </div>
-          
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            
-            </div>
-        <div>
-            <Image src={"/her4.png"} alt="style" width={239} height={427}/>
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-
-            </div>
-            
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            
-</div>
-</div>
-</div>
-<div className="w-[1049] h-[615]  flex justify-center items-center mt-32">
-        <div className="w-[239] h-[615]  flex gap-9 ">
-
-<div  className="flex flex-col  " >
-            <Image src={"/her5.png"} alt="style" width={239} height={427}/>
-          
-         
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-</div>
-            
-            
-      
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            </div>
-
-            <div>
-            <Image src={"/her6.png"} alt="style" width={239} height={427}/>
-          
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-</div>
-            
-            
-              <Image  className="mt-4"src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            </div>
-
-            <div>
-            <Image src={"/her7.png"} alt="style" width={239} height={427}/>
-          
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500 ">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-
-            </div>
-          
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            
-            </div>
-        <div>
-            <Image src={"/her8.png"} alt="style" width={239} height={427}/>
-          
-            <h5 className="font-Montserrat font-bold  text-base mt-5">Graphic Design</h5>
-            <p className="font-Montserrat font-bold text-sm text-gray-500 mt-4">English Department</p>
-            <div className="w-[108] h-[34] flex mt-4">
-              <h5  className="font-Montserrat font-bold  text-base text-gray-500">$16.58</h5>
-              <h5 className="font-Montserrat font-bold  text-base text-green-600">$6.48</h5>
-
-            </div>
-            
-              <Image className="mt-4" src={"/dot.png"} alt="dot" width={82.23} height={16}/>
-            
-
-
-</div>
-</div>
-</div>
-
-<div className="w-full relative bg-custom-dark-green-0 flex items-center mt-4">
-  {/* Content on the left */}
-  <div className="flex flex-col justify-center items-start px-4 ml-28">
-    <h5 className="font-Montserrat font-normal text-[20px] text-white mb-2">
-      SUMMER 2020
-    </h5>
-    <h1 className="font-Montserrat text-[58px] font-bold text-white">
-      Vita Classic<br />Product
-    </h1>
-    <h4 className="font-Montserrat text-sm font-normal text-white mb-4 w-full">
-      We knew how large objects will act, We know<br />how our object will act we know.
-    </h4>
-    <div className="w-[221px] h-[62px] flex items-center justify-center">
-      <div className="flex gap-3">
-        <div>
-          <p className="text-white font-Montserrat font-bold text-[24px] mt-2">$16.48</p>
-        </div>
-        <div className="ml-5  bg-custom-green-0 rounded-sm mt-2 w-[184px] h-[52px]  text-white font-Montserrat font-bold text-sm">
-          <button className="text-white ml-12 mt-3 ">Add To Cart</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  {/* Image on the right */}
-  <div className="ml-auto">
-    <Image src="/hero9.png" alt="hero" width={350} height={100} />
-  </div>
-</div>
-
-{/* Section 2 */}
-<div className="w-full h-auto flex flex-row justify-center items-center mt-10">
-  <Image src={"/hero01.png"} alt="women" width={500} height={234} />
-  <div className="flex flex-col justify-center items-start px-8 ml-8">
-    <h5 className="font-Montserrat font-bold text-base text-gray-600 mb-2">SUMMER 2020</h5>
-    <h1 className="font-Montserrat font-bold text-[40px] text-black mb-4">
-      Part Of The Neural<br />Universe
-    </h1>
-    <h4 className="font-Montserrat font-normal text-sm text-[20px] text-gray-600 mb-6">
-      We know how large objects will act,<br /> but things on a small scale.
-    </h4>
-    <div className="flex m-4 space-x-4">
-      <button className="bg-custom-green-0 text-white font-Montserrat px-6 py-2 rounded-md">
-        BUY NOW
-      </button>
-      <button className="bg-transparent text-black font-Montserrat px-6 py-2 border border-green-600 rounded-md">
-        READ MORE
-      </button>
-    </div>
-  </div>
-</div>
 
 {/* Section 3 */}
 <div className="w-full h-auto mt-10">
@@ -378,10 +176,10 @@ export default function Home() {
     </div>
   </div>
 </div>
-</div>
-</div>
-</div>
-</header>
+
+
+
+
  <div className="flex items-center justify-around bg-slate-100 px-6 py-4">
  <p className="font-Montserrat font-bold text-[24px]">Bandage</p>
  <div className="flex items-center space-x-4">
